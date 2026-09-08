@@ -1,1 +1,1 @@
-write("Hello, new sekai").
+?- write("Hello, new sekai").
