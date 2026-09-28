@@ -25,6 +25,6 @@ recog_chars([C|CS],Q) :- delta(Q,C,Next), recog_chars(CS, Next).
 % δ(Q,0)와 δ(Q,1)을 실행 시켜 유효한 다음 내부상태 qn을 찾고 다음 내부상태와 소모되고 남은입력으 재귀탐색
 % 찾지 못한다는건 유효입력이 아니거나 수용하지 않는 문자열이라는 의미 
 
-?- recognize('100') -> format('100은 허용됩니다~n'); format('100은 거절됩니다~n').
-?- recognize('0011') -> format('0011은 허용됩니다~n'); format('0011은 거절됩니다~n').
-?- recognize('000100') -> format('000100은 허용됩니다~n'); format('000100은 거절됩니다~n').
+?- recognize('100') -> format('100은 허용됩니다~n'); format('100은 거절됩니다~n'). % 허용 
+?- recognize('0011') -> format('0011은 허용됩니다~n'); format('0011은 거절됩니다~n'). % 거절
+?- recognize('000100') -> format('000100은 허용됩니다~n'); format('000100은 거절됩니다~n'). % 허용
